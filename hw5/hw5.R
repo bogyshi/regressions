@@ -30,11 +30,11 @@ termplot(stateLM,partial.resid = TRUE)
 #overall, if utah is removed, we see an improved R squared amongst some other things
 #ratio suddenly becomes important when Utah is removed, our model shouldnt be so various from just one observation
 
-constVariance = function(dataset,response)
+
+constVariance = function(losers,dataset)
 {
-  losers = lm(response ~ .,dataset)
-  ggplot(dataset,aes(x=losers$fitted.values,y=losers$residuals))+geom_point() 
-  return(losers)
+  aplot = ggplot(dataset,aes(x=losers$fitted.values,y=losers$residuals))+geom_point() 
+  
 }
 
 isNormal = function(model)
@@ -63,13 +63,14 @@ getCooks = function(model,dataset)
 }
 #BEGIN teengamb
 data(teengamb)
-tmodel <- constVariance(teengamb,teengamb$gamble)
+tmodel <- lm(gamble~.,teengamb)
+constVariance(tmodel,teengamb)
 #this looks suspicious, based on the info given by our textbook, looks like some heteroscedasticity
 # we may need to transform our y, so that var(h(y)) is constant, book used square root for counts, we can expirment with this.
-constVariance(teengamb,sqrt(teengamb$gamble))
-constVariance(teengamb,exp(teengamb$gamble))
-constVariance(teengamb,abs(teengamb$gamble))
-#none of these really worked
+#constVariance(lm(log(gamble)~.,teengamb),teengamb)
+constVariance(lm(exp(gamble)~.,teengamb),teengamb)
+constVariance(lm(sqrt(gamble)~.,teengamb),teengamb)
+#none of these really worked, sqrt seems to be much better? show that graph
 isNormal(tmodel)
 #nope, this aint good, looks like a long tailed distribution which means we may need to use robust methods or let central limit therorem take care of this problem
 #could also be an outlier, we definetly have one.
@@ -83,7 +84,52 @@ weirdo = getCooks(tmodel,teengamb)
 tmodel2 = lm(gamble~.,subset = weirdo< max(weirdo),teengamb)
 summary(tmodel)
 summary(tmodel2)
-termplot(stateLM,partial.resid = TRUE)
-#all look pretty good, maybe not takers,
-#overall, if utah is removed, we see an improved R squared amongst some other things
-#ratio suddenly becomes important when Utah is removed, our model shouldnt be so various from just one observation
+#Looking at the differences, we see a higher r squared, signifigantly different R squared values, and different p-values.
+termplot(tmodel,partial.resid = TRUE)
+#not sure what to do with this, doesnt make too much sense.
+#BEGIN prostate
+data(prostate)
+pmodel = lm(lpsa~.,prostate)
+constVariance(pmodel,prostate)
+#we looking prime son
+isNormal(pmodel)
+#looks good still, may be short tailed.
+seeLeverages(pmodel,prostate)
+2*9/97
+#observations 41 and 32 seem to 
+examineStudRes(pmodel)
+# potential points of interested, 39, 47, 95, 69
+cooksP = getCooks(pmodel,prostate)
+#graphically, 32 and 47 are quite high, along with a couple more strugglers
+summary(pmodel)
+pmodel2=lm(lpsa~.,subset=cooksP<max(cooksP),prostate)
+summary(pmodel2)
+# we see some improvement, maybe do this again but with more removed from cooks data set
+#BEGIN: swiss data
+data(swiss)
+smodel=lm(Fertility~.,swiss)
+constVariance(smodel,swiss)
+#looks good
+isNormal(smodel)
+#very very nice
+seeLeverages(smodel,swiss)
+2*6/47
+#v de gee and la vallee are quite high
+examineStudRes(smodel)
+# not much here
+cooksS = getCooks(smodel,swiss)
+#porren and sierre are decently high
+smodel2 = lm(Fertility~.,subset=cooksS<max(cooksS),swiss)
+summary(smodel)
+summary(smodel2)
+# severly improed R squared, its tempting to always do this?
+#Begin CHEDDAR
+data(cheddar)
+cmodel = lm(taste~.,cheddar)
+constVariance(cmodel,cheddar)
+#looks good here too
+isNormal(cmodel)
+#looks good
+seeLeverages(cmodel,cheddar)
+2*4/30
+#highly shifted, 20 and 26 stand out, but may be nothing to it? 0.266667 is the only standout
