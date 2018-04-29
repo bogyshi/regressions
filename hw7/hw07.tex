@@ -1,0 +1,289 @@
+\documentclass[11pt]{article}
+\usepackage{amsgen,amsmath,amstext,amsbsy,amsopn,amssymb}
+%\usepackage[dvips]{graphicx,color}
+\usepackage{graphicx,color}
+\usepackage{graphicx,color,bm}
+\usepackage{epsfig}
+\usepackage{enumerate}
+
+%\setlength{\oddsidemargin}{0.1 in} \setlength{\evensidemargin}{-0.1
+%in} \setlength{\topmargin}{-0.6 in} \setlength{\textwidth}{6.5 in}
+%\setlength{\textheight}{8.5 in} \setlength{\headsep}{0.75 in}
+%\setlength{\parindent}{0 in} \setlength{\parskip}{0.1 in}
+
+\textwidth 6.3in \textheight 8.8in \topmargin -0.5truein
+\oddsidemargin .15truein
+\parskip .1in
+\renewcommand{\baselinestretch}{1.53}  % double spaced
+
+
+\newcommand{\homework}[9]{
+	\pagestyle{myheadings}
+	\thispagestyle{plain}
+	\newpage
+	\setcounter{page}{1}
+	\noindent
+	\begin{center}
+		\framebox{
+			\vbox{\vspace{2mm}
+				\hbox to 6.28in { {\bf Math531:~Regression - I  \hfill} }
+				\vspace{6mm}
+				\hbox to 6.28in { {\Large \hfill #1 (#2)  \hfill} }
+				\vspace{6mm}
+				\hbox to 6.28in { {\it Instructor: #3 \hfill} }
+				\hbox to 6.28in { {\it Office hours: #4  \hfill #6}}
+				\vspace{2mm}}
+		}
+	\end{center}
+	\markboth{#1}{#1}
+	\vspace*{4mm}
+}
+
+% ----------------------- MATH -------------------------
+\def\av{\boldsymbol a}
+\def\bv{\boldsymbol b}
+\def\cv{\boldsymbol c}
+\def\dv{\boldsymbol d}
+\def\ev{\boldsymbol e}
+\def\fv{\boldsymbol f}
+\def\gv{\boldsymbol g}
+\def\hv{\boldsymbol h}
+\def\iv{\boldsymbol i}
+\def\gv{\boldsymbol j}
+\def\kv{\boldsymbol k}
+\def\lv{\boldsymbol l}
+\def\mv{\boldsymbol m}
+\def\nv{\boldsymbol n}
+\def\ov{\boldsymbol o}
+\def\pv{\boldsymbol p}
+\def\qv{\boldsymbol q}
+\def\rv{\boldsymbol r}
+\def\sv{\boldsymbol s}
+\def\tv{\boldsymbol t}
+\def\uv{\boldsymbol u}
+\def\vv{\boldsymbol v}
+\def\wv{\boldsymbol w}
+\def\xv{\boldsymbol x}
+\def\yv{\boldsymbol y}
+\def\zv{\boldsymbol z}
+\def\Av{\boldsymbol A}
+\def\Bv{\boldsymbol B}
+\def\Cv{\boldsymbol C}
+\def\Dv{\boldsymbol D}
+\def\Ev{\boldsymbol E}
+\def\Fv{\boldsymbol F}
+\def\Gv{\boldsymbol G}
+\def\Hv{\boldsymbol H}
+\def\Iv{\boldsymbol I}
+\def\Gv{\boldsymbol J}
+\def\Kv{\boldsymbol K}
+\def\Lv{\boldsymbol L}
+\def\Mv{\boldsymbol M}
+\def\Nv{\boldsymbol N}
+\def\Ov{\boldsymbol O}
+\def\Pv{\boldsymbol P}
+\def\Qv{\boldsymbol Q}
+\def\Rv{\boldsymbol R}
+\def\Sv{\boldsymbol S}
+\def\Tv{\boldsymbol T}
+\def\Uv{\boldsymbol U}
+\def\Vv{\boldsymbol V}
+\def\Wv{\boldsymbol W}
+\def\Xv{\boldsymbol X}
+\def\Yv{\boldsymbol Y}
+\def\Zv{\boldsymbol Z}
+\def\Abf{\mathbf A}
+\def\Bbf{\mathbf B}
+\def\Cbf{\mathbf C}
+\def\Dbf{\mathbf D}
+\def\Ebf{\mathbf E}
+\def\Fbf{\mathbf F}
+\def\Gbf{\mathbf G}
+\def\Hbf{\mathbf H}
+\def\Ibf{\mathbf I}
+\def\Gbf{\mathbf J}
+\def\Kbf{\mathbf K}
+\def\Lbf{\mathbf L}
+\def\Mbf{\mathbf M}
+\def\Nbf{\mathbf N}
+\def\Obf{\mathbf O}
+\def\Pbf{\mathbf P}
+\def\Qbf{\mathbf Q}
+\def\Rbf{\mathbf R}
+\def\Sbf{\mathbf S}
+\def\Tbf{\mathbf T}
+\def\Ubf{\mathbf U}
+\def\Vbf{\mathbf V}
+\def\Wbf{\mathbf W}
+\def\Xbf{\mathbf X}
+\def\Ybf{\mathbf Y}
+\def\Jbf{\mathbf J}
+\def\Zbf{\mathbf Z}
+\def\Am{\mathrm A}
+\def\Bm{\mathrm B}
+\def\Cm{\mathrm C}
+\def\Dm{\mathrm D}
+\def\Em{\mathrm E}
+\def\Fm{\mathrm F}
+\def\Gm{\mathrm G}
+\def\Hm{\mathrm H}
+\def\Im{\mathrm I}
+\def\Gm{\mathrm J}
+\def\Km{\mathrm K}
+\def\Lm{\mathrm L}
+\def\Mm{\mathrm M}
+\def\Nm{\mathrm N}
+\def\Om{\mathrm O}
+\def\Pm{\mathrm P}
+\def\Qm{\mathrm Q}
+\def\Rm{\mathrm R}
+\def\Sm{\mathrm S}
+\def\Tm{\mathrm T}
+\def\Um{\mathrm U}
+\def\mv{\mathrm V}
+\def\Wm{\mathrm W}
+\def\Xm{\mathrm X}
+\def\Ym{\mathrm Y}
+\def\Zm{\mathrm Z}
+\newcommand{\Ac}{\mathcal{A}}
+\newcommand{\Bc}{\mathcal{B}}
+\newcommand{\Cc}{\mathcal{C}}
+\newcommand{\Dc}{\mathcal{D}}
+\newcommand{\Ec}{\mathcal{E}}
+\newcommand{\Fc}{\mathcal{F}}
+\newcommand{\Gc}{\mathcal{G}}
+\newcommand{\Hc}{\mathcal{H}}
+\newcommand{\Ic}{\mathcal{I}}
+\newcommand{\Jc}{\mathcal{J}}
+\newcommand{\Kc}{\mathcal{K}}
+\newcommand{\Lc}{\mathcal{L}}
+\newcommand{\Mc}{\mathcal{M}}
+\newcommand{\Nc}{\mathcal{N}}
+\newcommand{\Oc}{\mathcal{O}}
+\newcommand{\Pc}{\mathcal{P}}
+\newcommand{\Qc}{\mathcal{Q}}
+\newcommand{\Rc}{\mathcal{R}}
+\newcommand{\Sc}{\mathcal{S}}
+\newcommand{\Tc}{\mathcal{T}}
+\newcommand{\Uc}{\mathcal{U}}
+\newcommand{\Vc}{\mathcal{V}}
+\newcommand{\Wc}{\mathcal{W}}
+\newcommand{\Xc}{\mathcal{X}}
+\newcommand{\Yc}{\mathcal{Y}}
+\newcommand{\Zc}{\mathcal{Z}}
+\newcommand{\alphav}{\mbox{\boldmath{$\alpha$}}}
+\newcommand{\betav}{\mbox{\boldmath{$\beta$}}}
+\newcommand{\gammav}{\mbox{\boldmath{$\gamma$}}}
+\newcommand{\deltav}{\mbox{\boldmath{$\delta$}}}
+\newcommand{\epsilonv}{\mbox{\boldmath{$\epsilon$}}}
+\newcommand{\zetav}{\mbox{\boldmath$\zeta$}}
+\newcommand{\etav}{\mbox{\boldmath{$\eta$}}}
+\newcommand{\iotav}{\mbox{\boldmath{$\iota$}}}
+\newcommand{\kappav}{\mbox{\boldmath{$\kappa$}}}
+\newcommand{\lambdav}{\mbox{\boldmath{$\lambda$}}}
+\newcommand{\muv}{\mbox{\boldmath{$\mu$}}}
+\newcommand{\nuv}{\mbox{\boldmath{$\nu$}}}
+\newcommand{\xiv}{\mbox{\boldmath{$\xi$}}}
+\newcommand{\omicronv}{\mbox{\boldmath{$\omicron$}}}
+\newcommand{\piv}{\mbox{\boldmath{$\pi$}}}
+\newcommand{\rhov}{\mbox{\boldmath{$\rho$}}}
+\newcommand{\sigmav}{\mbox{\boldmath{$\sigma$}}}
+\newcommand{\tauv}{\mbox{\boldmath{$\tau$}}}
+\newcommand{\upsilonv}{\mbox{\boldmath{$\upsilon$}}}
+\newcommand{\phiv}{\mbox{\boldmath{$\phi$}}}
+\newcommand{\varphiv}{\mbox{\boldmath{$\varphi$}}}
+\newcommand{\chiv}{\mbox{\boldmath{$\chi$}}}
+\newcommand{\psiv}{\mbox{\boldmath{$\psi$}}}
+\newcommand{\omegav}{\mbox{\boldmath{$\omega$}}}
+\newcommand{\Sigmav}{\mbox{\boldmath{$\Sigma$}}}
+\newcommand{\Lambdav}{\mbox{\boldmath{$\Lambda$}}}
+\newcommand{\Deltav}{\mbox{\boldmath{$\Delta$}}}
+\newcommand{\Omegav}{\mbox{\boldmath{$\Omega$}}}
+\newcommand{\varepsilonv}{\mbox{\boldmath{$\varepsilon$}}}
+
+\newcommand{\eps}{\varepsilon}
+\newcommand{\epsv}{\mbox{\boldmath{$\varepsilon$}}}
+
+\def\1v{\mathbf 1}
+\def\0v{\mathbf 0}
+\def\Id{\mathbf I} % identity matrix
+\newcommand{\ind}[1]{\mathbbm{1}_{\left[ {#1} \right] }}
+\newcommand{\Ind}[1]{\mathbbm{1}_{\left\{ {#1} \right\} }}
+\newcommand\indep{\protect\mathpalette{\protect\independenT}{\perp}}\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+\newcommand{\QED}{\begin{flushright} {\bf QED} \end{flushright}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Real}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+\newcommand{\E}{\mathbb E}
+\newcommand{\sgn}{\mathop{\mathrm{sign}}}
+\def\Pr{\mathrm P}
+\def\pr{\mathrm P}
+\newcommand{\Var}{\mathop{\rm Var}}
+\newcommand{\var}{\mathop{\rm Var}}
+\newcommand{\Cov}{\mathop{\rm Cov}}
+\newcommand{\cov}{\mathop{\rm Cov}}
+\newcommand{\Corr}{\mathop{\rm Corr}}
+\newcommand{\ang}{\mathop{\rm Angle}}
+\newcommand{\tr}{\mathop{\rm trace}}
+\newcommand{\proj}{\mathop{\rm Proj}}
+\newcommand{\rank}{\mathop{\rm rank}}
+
+\newcommand{\diag}{\mathop{\rm diag}}
+\newcommand{\Diag}{\mathop{\rm diag}}
+\newcommand{\sk}{\vspace{0.5cm}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\mb}{\mbox}
+\newcommand{\wh}{\widehat}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+
+\newcommand{\norm}[1]{\|#1\|}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\set}[1]{\left\{#1\right\}}
+
+\newcommand{\To}{\longrightarrow}
+
+\def\equalLaw{\stackrel{\mathcal{L}}{=}}
+\def\equallaw{\stackrel{\mathcal{L}}{=}}
+
+\def\half{\frac{1}{2}}
+
+\usepackage{caption}
+
+\begin{document}
+
+\begin{title}
+	{\Large\bf Homework 7, MATH 455: Due Mon, 04/30/2018}
+\end{title}
+
+\author{\bf Your Name: ... (replace this)}
+
+\maketitle
+{\bf Instructions}:  The homework assignment editing this \LaTeX\ document.  Download the \LaTeX\ source from the class web page and study
+it to learn more about \LaTeX.  Replace the text with appropriate information.  Run ``pdflatex'' on this document.
+
+You will submit this assignment in two parts:
+\begin{enumerate}
+\item Print out the PDF file and bring it to class, and
+\item Send an e-mail to:
+\begin{center}
+gang@math.binghamton.edu
+\end{center}
+\emph{before class} on the due date with two attachments:
+\begin{itemize}
+\item The \LaTeX\ source file, and
+\item The generated PDF document.
+\end{itemize}
+\end{enumerate}
+\newpage
+Please complete the following:
+\begin{enumerate}
+\item  Finish R exercises 11.1, 11.2, 11.3, 11.4, 11.6 of the textbook. Submit your
+answers for {\color{red}ALL} questions.
+\item  Finish R exercises 13.2, 13.3 of the textbook. Submit your
+answers for {\color{red}ALL} questions. 
+\item  Finish R exercises  8.1, 8.2, 8.6, of the textbook. Submit your
+answers for {\color{red}ALL} questions. 
+\end{enumerate}
+
+\end{document}
