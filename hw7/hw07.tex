@@ -282,6 +282,26 @@ Please complete the following:
 \item  Finish R exercises 11.1, 11.2, 11.3, 11.4, 11.6 of the textbook. Submit your answers for {\color{red}ALL} questions.
 \begin{enumerate}
 	\item 11.1
+	We first take a look at the PC
+	\begin{verbatim}
+		> hold=prcomp(seatpos[,-c(9,1,2)])
+		> print(summary(hold))
+		Importance of components:
+		PC1     PC2     PC3     PC4     PC5     PC6
+		Standard deviation     17.1573 2.89689 2.11907 1.56412 1.22502 0.46218
+		Proportion of Variance  0.9453 0.02695 0.01442 0.00786 0.00482 0.00069
+		Cumulative Proportion   0.9453 0.97222 0.98664 0.99450 0.99931 1.00000
+	\end{verbatim}
+	Looks like the first two components explain most of the variation of our data.
+	Using them for our prediction we get the following.
+	\begin{verbatim}
+		> cmonnow = pcr(hipcenter~.-Age-Weight,data=seatpos[],ncomp=2)
+		> predict(cmonnow,testhcf,ncomp=2,interval="prediction")
+		, , 2 comps
+		
+		hipcenter
+		1 -204.4636
+	\end{verbatim}
 	\item 11.2
 	\item 11.3
 	\item 11.4
