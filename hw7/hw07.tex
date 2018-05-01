@@ -303,8 +303,114 @@ Please complete the following:
 		1 -204.4636
 	\end{verbatim}
 	\item 11.2
+	We fit a partial least squares model to the same data and examine the number of components to use.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=10cm,height=10cm]{112numc.pdf}
+			\caption[paic]{examining the residual mean squared error over number of components and choosing the min value}
+			\label{cspos}
+		\end{figure}
+		we then use 4 components as it has the minmum RMSEP value and we get teh following prediction
+		\begin{verbatim}
+			> splsmod <- plsr(hipcenter ~ ., data=seatpos, validation="CV")
+			> #4 components looks good
+			> hcpred = predict(splsmod,testhcf,ncomp=4)
+			> print(hcpred)
+			, , 4 comps
+			
+			hipcenter
+			1 -179.4634
+		\end{verbatim}
 	\item 11.3
-	\item 11.4
+	We are now going to fit a ridge regression model to the seatpos data
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=10cm,height=10cm]{hcrgp.pdf}
+		\caption[paic]{examining th}
+		\label{hcrgp}
+	\end{figure}
+	using the minimum lambda value provided of ~0.05, we get the following prediction
+	\begin{verbatim}
+		> hcrgpred1 = cbind(1,as.matrix(testhcf[1,]))%*%coef(hcrgmod2)[8,]
+		> hcrgpred1
+		[,1]
+		1 -175.488
+	\end{verbatim}
+	\item 11.4\\
+	We first remove each tenth observation and seperate the data.
+	\begin{verbatim}
+		fat2=fat[-seq(1,length(fat[,1]),10),]
+		testfat = fat[seq(1,length(fat[,1]),10),]
+	\end{verbatim} 
+	\begin{enumerate}
+		\item a
+		we now fit a linear model and get the following prediction accuracy described by the residual mean squared error between the predictions and the actual observations
+		\begin{verbatim}
+			> oglg = lm(siri ~ . -brozek -density,fat2)
+			> wut=predict(oglg,newdata=testfat)
+			> rmse(wut,testfat$siri)
+			[1] 1.946023
+		\end{verbatim}
+		\item b
+		we now use the stepwise function to determine the "ideal" model 
+		\begin{verbatim}
+			> stepwise(lm(siri ~ . -brozek -density,fat2),criterion = c("AIC"),direction=c("forward"))
+			Call:
+			lm(formula = siri ~ abdom + free + weight + forearm + adipos + 
+			thigh + chest + biceps + ankle, data = fat2)
+			
+			Coefficients:
+			(Intercept)        abdom         free       weight      forearm       adipos        thigh        chest       biceps  
+			-2.9190       0.1179      -0.5698       0.3925       0.2146      -0.5277       0.1561       0.1246       0.1490  
+			ankle  
+			0.1475  
+		\end{verbatim}
+		I chose forward progression, and proceeded to fit a model with the chosen parameters and got the following prediction results
+		\begin{verbatim}
+			> splg = lm(formula = siri ~ abdom + free + weight + forearm + adipos + thigh + chest + biceps + ankle, data = fat2)
+			> wut2=predict(splg,newdata=testfat)
+			> rmse(wut2,testfat$siri)
+			[1] 1.98911
+		\end{verbatim}
+		we see a slightly higher RMSE, but overall quite close and simpler too
+		\item c
+		Now we want to fit a principle component regression onto our data.
+		\begin{verbatim}
+			> print(summary(temp))
+			Importance of components:
+			PC1     PC2      PC3     PC4     PC5     PC6     PC7     PC8     PC9    PC10    PC11    PC12
+			Standard deviation     36.8986 15.5341 10.29573 3.66009 3.44451 2.64961 2.14660 1.88702 1.57469 1.43989 1.30247 1.21438
+			Proportion of Variance  0.7736  0.1371  0.06023 0.00761 0.00674 0.00399 0.00262 0.00202 0.00141 0.00118 0.00096 0.00084
+			Cumulative Proportion   0.7736  0.9107  0.97095 0.97856 0.98531 0.98929 0.99191 0.99394 0.99534 0.99652 0.99749 0.99832
+			PC13    PC14    PC15    PC16
+			Standard deviation     1.06850 1.00511 0.75913 0.46948
+			Proportion of Variance 0.00065 0.00057 0.00033 0.00013
+			Cumulative Proportion  0.99897 0.99955 0.99987 1.00000
+		\end{verbatim}
+		I choose to only include the first 3 PRC as they cover about 97 percent of the variation in the data.\\
+		Fitting the model, we now get
+		\begin{verbatim}
+			> fatpcr = pcr(siri ~ . -brozek -density,data=fat2,ncomp=3)
+			> pcrr= predict(fatpcr,testfat,ncomp=3,interval="prediction")
+			> rmse(pcrr,testfat$siri)
+			[1] 2.487871
+		\end{verbatim}
+		the RMSE is quite higher, looking at a PCR with all PCs we get
+		\begin{verbatim}
+			> rmse(pcrr2,testfat$siri)
+			[1] 1.946023
+		\end{verbatim}
+		so we could improve our RMSE, but that would effectively negate the point of PCR.
+		\item d
+		Looking at a partial least squares regression, we create the following
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=10cm,height=10cm]{114dc.pdf}
+				\caption[paic]{a look at a}
+				\label{hcrgp}
+			\end{figure}
+		\item e
+	\end{enumerate}
 	\item 11.6
 \end{enumerate}
 \item  Finish R exercises 13.2, 13.3 of the textbook. Submit your
@@ -356,7 +462,7 @@ answers for {\color{red}ALL} questions.
 			\caption[paic]{variance check on pipeline data after transform}
 			\label{divusavt}
 		\end{figure}
-		This si the results of taking the square root on both the response and explanatory variables. It worked quite well.
+		This is the results of taking the square root on both the response and explanatory variables. It worked quite well.
 	\end{enumerate}
 	\item 8.2
 	\begin{enumerate}
