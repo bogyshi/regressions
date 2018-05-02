@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.18)  1 MAY 2018 09:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.18)  1 MAY 2018 23:59
 entering extended mode
 **./hw07.tex
 (hw07.tex
@@ -182,11 +182,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 )
 \c@ContinuedFloat=\count101
 Package caption Info: float package is loaded.
-) (hw07.aux
-
-LaTeX Warning: Label `hcrgp' multiply defined.
-
-)
+) (hw07.aux)
 \openout1 = `hw07.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 254.
@@ -304,18 +300,680 @@ File: 114dc.pdf Graphic file (type pdf)
 Package pdftex.def Info: 114dc.pdf used on input line 408.
 (pdftex.def)             Requested size: 284.53154pt x 284.53154pt.
  [6]
-<pipelinevar.pdf, id=42, 505.89pt x 505.89pt>
+Overfull \hbox (260.4934pt too wide) in paragraph at lines 439--439
+ []\OT1/cmtt/m/n/10.95 (Intercept)  1 comps  2 comps  3 comps  4 comps  5 comps
+  6 comps  7 comps  8 comps  9 comps  10 comps  11 comps[] 
+ []
+
+
+Overfull \hbox (300.7342pt too wide) in paragraph at lines 439--439
+ []\OT1/cmtt/m/n/10.95 CV           8.382    6.384    2.998    1.967    1.709  
+  1.822    1.889    1.955    2.041    2.231     2.658     2.738[] 
+ []
+
+
+Overfull \hbox (300.7342pt too wide) in paragraph at lines 439--439
+ []\OT1/cmtt/m/n/10.95 adjCV        8.382    6.379    2.997    1.962    1.698  
+  1.800    1.858    1.920    1.998    2.174     2.571     2.646[] 
+ []
+
+[7 <./114dc.pdf>]
+Overfull \hbox (243.24733pt too wide) in paragraph at lines 439--439
+ []\OT1/cmtt/m/n/10.95 1 comps  2 comps  3 comps  4 comps  5 comps  6 comps  7 
+comps  8 comps  9 comps  10 comps  11 comps  12 comps[] 
+ []
+
+
+Overfull \hbox (277.73946pt too wide) in paragraph at lines 439--439
+ []\OT1/cmtt/m/n/10.95 X       76.85    90.81    97.13    97.83    98.24    98.
+54    99.04    99.27    99.40     99.49     99.60     99.67[] 
+ []
+
+
+Overfull \hbox (277.73946pt too wide) in paragraph at lines 439--439
+ []\OT1/cmtt/m/n/10.95 siri    44.30    87.73    95.02    96.72    96.94    97.
+07    97.11    97.14    97.15     97.16     97.16     97.16[] 
+ []
+
+<fatrgp.pdf, id=51, 505.89pt x 505.89pt>
+File: fatrgp.pdf Graphic file (type pdf)
+ <use fatrgp.pdf>
+Package pdftex.def Info: fatrgp.pdf used on input line 445.
+(pdftex.def)             Requested size: 284.53154pt x 284.53154pt.
+ [8]
+Overfull \hbox (59.28932pt too wide) in paragraph at lines 455--455
+ []\OT1/cmtt/m/n/10.95 > fatrm = lm.ridge(siri ~ .-brozek -density,data=fat2,la
+mbda=seq(0,2,len=30))[] 
+ []
+
+[9 <./fatrgp.pdf>]
+Overfull \hbox (105.27882pt too wide) in paragraph at lines 478--478
+ []\OT1/cmtt/m/n/10.95 Standard deviation     288.0383 69.51358 30.74721 27.856
+52 21.73040 19.42447 17.28302[] 
+ []
+
+
+Overfull \hbox (105.27882pt too wide) in paragraph at lines 478--478
+ []\OT1/cmtt/m/n/10.95 Proportion of Variance   0.9002  0.05243  0.01026  0.008
+42  0.00512  0.00409  0.00324[] 
+ []
+
+
+Overfull \hbox (105.27882pt too wide) in paragraph at lines 478--478
+ []\OT1/cmtt/m/n/10.95 Cumulative Proportion    0.9002  0.95268  0.96294  0.971
+36  0.97648  0.98058  0.98382[] 
+ []
+
+
+Overfull \hbox (139.77095pt too wide) in paragraph at lines 491--491
+ []\OT1/cmtt/m/n/10.95 species                  sex       basilar.length occipi
+tonasal.length        palate.length[] 
+ []
+
+
+Overfull \hbox (174.26308pt too wide) in paragraph at lines 491--491
+ []\OT1/cmtt/m/n/10.95 -9.470452e-05        -6.133600e-04        -4.840682e-01 
+       -4.562961e-01        -3.662141e-01[] 
+ []
+
+
+Overfull \hbox (168.51439pt too wide) in paragraph at lines 491--491
+ []\OT1/cmtt/m/n/10.95 palate.width         nasal.length          nasal.width  
+    squamosal.depth       lacrymal.width[] 
+ []
+
+
+Overfull \hbox (174.26308pt too wide) in paragraph at lines 491--491
+ []\OT1/cmtt/m/n/10.95 -8.435755e-02        -2.480989e-01        -7.464748e-02 
+       -6.366132e-02        -1.189368e-01[] 
+ []
+
+
+Overfull \hbox (185.76045pt too wide) in paragraph at lines 491--491
+ []\OT1/cmtt/m/n/10.95 zygomatic.width        orbital.width       .rostral.widt
+h      occipital.depth          crest.width[] 
+ []
+
+
+Overfull \hbox (174.26308pt too wide) in paragraph at lines 491--491
+ []\OT1/cmtt/m/n/10.95 -2.066976e-01        -1.428888e-02        -1.064589e-01 
+       -1.781770e-01         8.196805e-02[] 
+ []
+
+
+Overfull \hbox (185.76045pt too wide) in paragraph at lines 491--491
+ []\OT1/cmtt/m/n/10.95 foramina.length      mandible.length       mandible.widt
+h       mandible.depth         ramus.height[] 
+ []
+
+
+Overfull \hbox (174.26308pt too wide) in paragraph at lines 491--491
+ []\OT1/cmtt/m/n/10.95 -9.941184e-03        -4.359818e-01        -2.999679e-02 
+       -5.832212e-02        -2.090714e-01[] 
+ []
+
+
+Overfull \hbox (128.27357pt too wide) in paragraph at lines 502--502
+ []\OT1/cmtt/m/n/10.95 Standard deviation     3.5509 1.5178 1.11386 1.00232 0.8
+4943 0.69411 0.55590 0.51277 ....[] 
+ []
+
+
+Overfull \hbox (128.27357pt too wide) in paragraph at lines 502--502
+ []\OT1/cmtt/m/n/10.95 Proportion of Variance 0.6304 0.1152 0.06203 0.05023 0.0
+3608 0.02409 0.01545 0.01315 ....[] 
+ []
+
+[10]
+Overfull \hbox (122.52489pt too wide) in paragraph at lines 502--502
+ []\OT1/cmtt/m/n/10.95 Cumulative Proportion  0.6304 0.7456 0.80765 0.85788 0.8
+9396 0.91805 0.93350 0.94665 ...[] 
+ []
+
+
+Overfull \hbox (444.4514pt too wide) in paragraph at lines 523--523
+ []\OT1/cmtt/m/n/10.95 species                  sex       basilar.length occipi
+tonasal.length        palate.length 0.27531510           0.26524013           0
+.27393581[] 
+ []
+
+
+Overfull \hbox (168.51439pt too wide) in paragraph at lines 523--523
+ []\OT1/cmtt/m/n/10.95 palate.width         nasal.length          nasal.width  
+    squamosal.depth       lacrymal.width[] 
+ []
+
+
+Overfull \hbox (157.01701pt too wide) in paragraph at lines 523--523
+ []\OT1/cmtt/m/n/10.95 0.23270782           0.22767199           0.22577402    
+       0.23719817           0.26469478[] 
+ []
+
+
+Overfull \hbox (185.76045pt too wide) in paragraph at lines 523--523
+ []\OT1/cmtt/m/n/10.95 zygomatic.width        orbital.width       .rostral.widt
+h      occipital.depth          crest.width[] 
+ []
+
+
+Overfull \hbox (157.01701pt too wide) in paragraph at lines 523--523
+ []\OT1/cmtt/m/n/10.95 0.25677431           0.07539545           0.25588530    
+       0.26958527          -0.16377366[] 
+ []
+
+
+Overfull \hbox (185.76045pt too wide) in paragraph at lines 523--523
+ []\OT1/cmtt/m/n/10.95 foramina.length      mandible.length       mandible.widt
+h       mandible.depth         ramus.height[] 
+ []
+
+
+Overfull \hbox (157.01701pt too wide) in paragraph at lines 523--523
+ []\OT1/cmtt/m/n/10.95 0.05683491           0.27711781           0.20971711    
+       0.23837398           0.25841572[] 
+ []
+
+
+Overfull \hbox (139.77095pt too wide) in paragraph at lines 523--523
+ []\OT1/cmtt/m/n/10.95 species                  sex       basilar.length occipi
+tonasal.length        palate.length[] 
+ []
+
+
+Overfull \hbox (168.51439pt too wide) in paragraph at lines 523--523
+ []\OT1/cmtt/m/n/10.95 0.5649159512        -0.0459169262         0.0090950112  
+       0.1659461872         0.0504494218[] 
+ []
+
+
+Overfull \hbox (168.51439pt too wide) in paragraph at lines 523--523
+ []\OT1/cmtt/m/n/10.95 palate.width         nasal.length          nasal.width  
+    squamosal.depth       lacrymal.width[] 
+ []
+
+
+Overfull \hbox (168.51439pt too wide) in paragraph at lines 523--523
+ []\OT1/cmtt/m/n/10.95 0.0121999313         0.3258713200         0.2396642898  
+      -0.1554982206         0.0291972986[] 
+ []
+
+
+Overfull \hbox (185.76045pt too wide) in paragraph at lines 523--523
+ []\OT1/cmtt/m/n/10.95 zygomatic.width        orbital.width       .rostral.widt
+h      occipital.depth          crest.width[] 
+ []
+
+
+Overfull \hbox (174.26308pt too wide) in paragraph at lines 523--523
+ []\OT1/cmtt/m/n/10.95 -0.2214711336         0.0502588495         0.0007699419 
+       -0.0243930064        -0.3420526961[] 
+ []
+
+
+Overfull \hbox (185.76045pt too wide) in paragraph at lines 523--523
+ []\OT1/cmtt/m/n/10.95 foramina.length      mandible.length       mandible.widt
+h       mandible.depth         ramus.height[] 
+ []
+
+
+Overfull \hbox (168.51439pt too wide) in paragraph at lines 523--523
+ []\OT1/cmtt/m/n/10.95 0.3370527404        -0.0189223029        -0.3231510620  
+      -0.2003645746        -0.1791012252[] 
+ []
+
+<kanga.pdf, id=67, 505.89pt x 505.89pt>
+File: kanga.pdf Graphic file (type pdf)
+ <use kanga.pdf>
+Package pdftex.def Info: kanga.pdf used on input line 528.
+(pdftex.def)             Requested size: 284.53154pt x 284.53154pt.
+ [11]
+<idk.pdf, id=71, 505.89pt x 505.89pt>
+File: idk.pdf Graphic file (type pdf)
+ <use idk.pdf>
+Package pdftex.def Info: idk.pdf used on input line 537.
+(pdftex.def)             Requested size: 284.53154pt x 284.53154pt.
+ [12 <./kanga.pdf>] [13 <./idk.pdf>]
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+
+Overfull \hbox (53.54063pt too wide) in paragraph at lines 604--604
+ []\OT1/cmtt/m/n/10.95 lm(formula = NS ~ Area + Anear + Dist + DistSC + Elevati
+on, data = galamiss)[] 
+ []
+
+[14]
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+
+Overfull \hbox (65.03801pt too wide) in paragraph at lines 635--635
+ []\OT1/cmtt/m/n/10.95 lm(formula = NS ~ Area + Anear + Dist + DistSC + Elevati
+on, data = imgalamiss)[] 
+ []
+
+[15]
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+
+Overfull \hbox (139.77095pt too wide) in paragraph at lines 659--659
+ []\OT1/cmtt/m/n/10.95 NS           ES       Area       Anear         Dist     
+ DistSC     Elevation            EM[] 
+ []
+
+
+Overfull \hbox (248.99602pt too wide) in paragraph at lines 659--659
+ []\OT1/cmtt/m/n/10.95 NS         1.00000000  0.973531485  0.6162212  0.0205571
+1 -0.019642065 -0.18622612  6.783715e-01  2.851766e-01[] 
+ []
+
+
+Overfull \hbox (248.99602pt too wide) in paragraph at lines 659--659
+ []\OT1/cmtt/m/n/10.95 ES         0.97353148  1.000000000  0.6177911  0.0737098
+2 -0.003761533 -0.18122351  7.235296e-01  3.103206e-01[] 
+ []
+
+
+Overfull \hbox (248.99602pt too wide) in paragraph at lines 659--659
+ []\OT1/cmtt/m/n/10.95 Area       0.61622115  0.617791136  1.0000000  0.1773577
+1 -0.114527566 -0.10897205  7.433463e-01  1.575627e-01[] 
+ []
+
+
+Overfull \hbox (248.99602pt too wide) in paragraph at lines 659--659
+ []\OT1/cmtt/m/n/10.95 Anear      0.02055711  0.073709818  0.1773577  1.0000000
+0 -0.119674948  0.04498817  5.480544e-01  6.360495e-02[] 
+ []
+
+
+Overfull \hbox (248.99602pt too wide) in paragraph at lines 659--659
+ []\OT1/cmtt/m/n/10.95 Dist      -0.01964207 -0.003761533 -0.1145276 -0.1196749
+5  1.000000000  0.61426960 -1.058799e-01  2.938245e-01[] 
+ []
+
+
+Overfull \hbox (248.99602pt too wide) in paragraph at lines 659--659
+ []\OT1/cmtt/m/n/10.95 DistSC    -0.18622612 -0.181223511 -0.1089720  0.0449881
+7  0.614269601  1.00000000 -1.581337e-01  4.162295e-01[] 
+ []
+
+
+Overfull \hbox (248.99602pt too wide) in paragraph at lines 659--659
+ []\OT1/cmtt/m/n/10.95 Elevation  0.67837148  0.723529575  0.7433463  0.5480543
+6 -0.105879903 -0.15813365  1.000000e+00 -7.548394e-18[] 
+ []
+
+
+Overfull \hbox (248.99602pt too wide) in paragraph at lines 659--659
+ []\OT1/cmtt/m/n/10.95 EM         0.28517661  0.310320605  0.1575627  0.0636049
+5  0.293824516  0.41622947 -7.548394e-18  1.000000e+00[] 
+ []
+
+
+Overfull \hbox (99.53014pt too wide) in paragraph at lines 659--659
+ []\OT1/cmtt/m/n/10.95 NS           ES       Area       Anear         Dist     
+ DistSC Elevation         EM[] 
+ []
+
+
+Overfull \hbox (208.7552pt too wide) in paragraph at lines 659--659
+ []\OT1/cmtt/m/n/10.95 NS         1.00000000  0.973531485  0.6162212  0.0205571
+1 -0.019642065 -0.18622612        NA 0.28517661[] 
+ []
+
+
+Overfull \hbox (208.7552pt too wide) in paragraph at lines 659--659
+ []\OT1/cmtt/m/n/10.95 ES         0.97353148  1.000000000  0.6177911  0.0737098
+2 -0.003761533 -0.18122351        NA 0.31032061[] 
+ []
+
+[16]
+Overfull \hbox (208.7552pt too wide) in paragraph at lines 659--659
+ []\OT1/cmtt/m/n/10.95 Area       0.61622115  0.617791136  1.0000000  0.1773577
+1 -0.114527566 -0.10897205        NA 0.15756273[] 
+ []
+
+
+Overfull \hbox (208.7552pt too wide) in paragraph at lines 659--659
+ []\OT1/cmtt/m/n/10.95 Anear      0.02055711  0.073709818  0.1773577  1.0000000
+0 -0.119674948  0.04498817        NA 0.06360495[] 
+ []
+
+
+Overfull \hbox (208.7552pt too wide) in paragraph at lines 659--659
+ []\OT1/cmtt/m/n/10.95 Dist      -0.01964207 -0.003761533 -0.1145276 -0.1196749
+5  1.000000000  0.61426960        NA 0.29382452[] 
+ []
+
+
+Overfull \hbox (208.7552pt too wide) in paragraph at lines 659--659
+ []\OT1/cmtt/m/n/10.95 DistSC    -0.18622612 -0.181223511 -0.1089720  0.0449881
+7  0.614269601  1.00000000        NA 0.41622947[] 
+ []
+
+
+Overfull \hbox (208.7552pt too wide) in paragraph at lines 659--659
+ []\OT1/cmtt/m/n/10.95 Elevation          NA           NA         NA          N
+A           NA          NA         1         NA[] 
+ []
+
+
+Overfull \hbox (208.7552pt too wide) in paragraph at lines 659--659
+ []\OT1/cmtt/m/n/10.95 EM         0.28517661  0.310320605  0.1575627  0.0636049
+5  0.293824516  0.41622947        NA 1.00000000[] 
+ []
+
+[17]
+Overfull \hbox (65.03801pt too wide) in paragraph at lines 707--707
+ []\OT1/cmtt/m/n/10.95 lm(formula = NS ~ Area + Anear + Dist + DistSC + Elevati
+on, data = rggalamiss)[] 
+ []
+
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+[18]
+Overfull \hbox (111.02751pt too wide) in paragraph at lines 720--720
+ []\OT1/cmtt/m/n/10.95 NS           ES       Area       Anear         Dist     
+ DistSC   Elevation         EM[] 
+ []
+
+
+Overfull \hbox (220.25258pt too wide) in paragraph at lines 720--720
+ []\OT1/cmtt/m/n/10.95 NS         1.00000000  0.973531485  0.6162212  0.0205571
+1 -0.019642065 -0.18622612  0.70180087 0.28517661[] 
+ []
+
+
+Overfull \hbox (220.25258pt too wide) in paragraph at lines 720--720
+ []\OT1/cmtt/m/n/10.95 ES         0.97353148  1.000000000  0.6177911  0.0737098
+2 -0.003761533 -0.18122351  0.74675973 0.31032061[] 
+ []
+
+
+Overfull \hbox (220.25258pt too wide) in paragraph at lines 720--720
+ []\OT1/cmtt/m/n/10.95 Area       0.61622115  0.617791136  1.0000000  0.1773577
+1 -0.114527566 -0.10897205  0.75415434 0.15756273[] 
+ []
+
+
+Overfull \hbox (220.25258pt too wide) in paragraph at lines 720--720
+ []\OT1/cmtt/m/n/10.95 Anear      0.02055711  0.073709818  0.1773577  1.0000000
+0 -0.119674948  0.04498817  0.56412830 0.06360495[] 
+ []
+
+
+Overfull \hbox (220.25258pt too wide) in paragraph at lines 720--720
+ []\OT1/cmtt/m/n/10.95 Dist      -0.01964207 -0.003761533 -0.1145276 -0.1196749
+5  1.000000000  0.61426960 -0.06913193 0.29382452[] 
+ []
+
+
+Overfull \hbox (220.25258pt too wide) in paragraph at lines 720--720
+ []\OT1/cmtt/m/n/10.95 DistSC    -0.18622612 -0.181223511 -0.1089720  0.0449881
+7  0.614269601  1.00000000 -0.10734289 0.41622947[] 
+ []
+
+
+Overfull \hbox (220.25258pt too wide) in paragraph at lines 720--720
+ []\OT1/cmtt/m/n/10.95 Elevation  0.70180087  0.746759735  0.7541543  0.5641283
+0 -0.069131928 -0.10734289  1.00000000 0.11884838[] 
+ []
+
+
+Overfull \hbox (220.25258pt too wide) in paragraph at lines 720--720
+ []\OT1/cmtt/m/n/10.95 EM         0.28517661  0.310320605  0.1575627  0.0636049
+5  0.293824516  0.41622947  0.11884838 1.00000000[] 
+ []
+
+
+Overfull \hbox (47.79195pt too wide) in paragraph at lines 747--747
+ []\OT1/cmtt/m/n/10.95 +   lmod <- lm(NS~Area+Anear+Dist+DistSC+Elevation, mimg
+p$imputations[[i]])[] 
+ []
+
+
+Overfull \hbox (24.7972pt too wide) in paragraph at lines 747--747
+ []\OT1/cmtt/m/n/10.95 [1,]    8.010774 -0.02177011 -0.07633469 0.004976406 -0.
+23399 0.3148571[] 
+ []
+
+[19]
+Overfull \hbox (7.55113pt too wide) in paragraph at lines 747--747
+ []\OT1/cmtt/m/n/10.95 [1,]    22.45479 0.02413709 0.01935359 1.114134 0.233130
+2 0.05907911[] 
+ []
+
+
+Overfull \hbox (13.29982pt too wide) in paragraph at lines 747--747
+ []\OT1/cmtt/m/n/10.95 [1,]   0.3567512 -0.9019359 -3.944215 0.004466615 -1.003
+688  5.329415[] 
+ []
+
+[20]
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+ [21]
+Overfull \hbox (7.55113pt too wide) in paragraph at lines 831--831
+ []\OT1/cmtt/m/n/10.95 > for(i in c(2:8)) impimamiss[is.na(pimamiss[,i]),i] <- 
+pimameans[i][] 
+ []
+
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+[22]
+Overfull \hbox (180.01176pt too wide) in paragraph at lines 850--850
+ []\OT1/cmtt/m/n/10.95 (Intercept)  pregnant    glucose     triceps      insuli
+n       bmi  diabetes       age       test[] 
+ []
+
+
+Overfull \hbox (208.7552pt too wide) in paragraph at lines 850--850
+ []\OT1/cmtt/m/n/10.95 [1,]     40.0757 0.1404388 0.06037759 -0.01842112 -0.008
+271171 0.5346332 -2.005283 0.3039374 -0.9404926[] 
+ []
+
+
+Overfull \hbox (157.01701pt too wide) in paragraph at lines 850--850
+ []\OT1/cmtt/m/n/10.95 (Intercept)  pregnant    glucose    triceps     insulin 
+      bmi diabetes        age     test[] 
+ []
+
+
+Overfull \hbox (185.76045pt too wide) in paragraph at lines 850--850
+ []\OT1/cmtt/m/n/10.95 [1,]    2.998815 0.1529132 0.02036614 0.06359883 0.00620
+6634 0.0877693 1.270908 0.04602268 1.055816[] 
+ []
+
+
+Overfull \hbox (122.52489pt too wide) in paragraph at lines 850--850
+ []\OT1/cmtt/m/n/10.95 (Intercept) pregnant  glucose    triceps   insulin      
+bmi  diabetes      age      test[] 
+ []
+
+
+Overfull \hbox (151.26833pt too wide) in paragraph at lines 850--850
+ []\OT1/cmtt/m/n/10.95 [1,]    13.36384 0.918422 2.964606 -0.2896456 -1.332634 
+6.091347 -1.577835 6.604079 -0.890773[] 
+ []
+
+<pipelinevar.pdf, id=120, 505.89pt x 505.89pt>
 File: pipelinevar.pdf Graphic file (type pdf)
  <use pipelinevar.pdf>
-Package pdftex.def Info: pipelinevar.pdf used on input line 430.
+Package pdftex.def Info: pipelinevar.pdf used on input line 862.
 (pdftex.def)             Requested size: 284.53154pt x 284.53154pt.
- [7 <./114dc.pdf>]
-Overfull \hbox (13.29982pt too wide) in paragraph at lines 456--456
+ [23]
+Overfull \hbox (13.29982pt too wide) in paragraph at lines 888--888
  []\OT1/cmtt/m/n/10.95 lm(formula = Lab ~ Field, data = pipeline, weights = 1/(
 (Field)^a_1))[] 
  []
 
-[8 <./pipelinevar.pdf>]
+[24 <./pipelinevar.pdf>]
 Missing character: There is no â in font cmtt10!
 Missing character: There is no € in font cmtt10!
 Missing character: There is no ˜ in font cmtt10!
@@ -346,32 +1004,32 @@ Missing character: There is no ˜ in font cmtt10!
 Missing character: There is no â in font cmtt10!
 Missing character: There is no € in font cmtt10!
 Missing character: There is no ™ in font cmtt10!
- <pipelinevart.pdf, id=62, 505.89pt x 505.89pt>
+ <pipelinevart.pdf, id=133, 505.89pt x 505.89pt>
 File: pipelinevart.pdf Graphic file (type pdf)
 
 <use pipelinevart.pdf>
-Package pdftex.def Info: pipelinevart.pdf used on input line 461.
+Package pdftex.def Info: pipelinevart.pdf used on input line 893.
 (pdftex.def)             Requested size: 284.53154pt x 284.53154pt.
- <ovtusa.pdf, id=63, 505.89pt x 505.89pt>
+ <ovtusa.pdf, id=134, 505.89pt x 505.89pt>
 File: ovtusa.pdf Graphic file (type pdf)
 
 <use ovtusa.pdf>
-Package pdftex.def Info: ovtusa.pdf used on input line 473.
+Package pdftex.def Info: ovtusa.pdf used on input line 905.
 (pdftex.def)             Requested size: 152.97917pt x 152.98009pt.
- <duse1.pdf, id=64, 505.89pt x 505.89pt>
+ <duse1.pdf, id=135, 505.89pt x 505.89pt>
 File: duse1.pdf Graphic file (type pdf)
  <use duse1.pdf>
-Package pdftex.def Info: duse1.pdf used on input line 478.
+Package pdftex.def Info: duse1.pdf used on input line 910.
 (pdftex.def)             Requested size: 152.97917pt x 152.98009pt.
 
-[9 <./pipelinevart.pdf>] [10 <./ovtusa.pdf> <./duse1.pdf>] [11]
-<ovtc.pdf, id=92, 505.89pt x 505.89pt>
+[25 <./pipelinevart.pdf>] [26 <./ovtusa.pdf> <./duse1.pdf>] [27]
+<ovtc.pdf, id=164, 505.89pt x 505.89pt>
 File: ovtc.pdf Graphic file (type pdf)
  <use ovtc.pdf>
-Package pdftex.def Info: ovtc.pdf used on input line 545.
+Package pdftex.def Info: ovtc.pdf used on input line 977.
 (pdftex.def)             Requested size: 284.53154pt x 284.53154pt.
- [12 <./ovtc.pdf>]
-[13] [14]
+ [28 <./ovtc.pdf>]
+[29] [30]
 Missing character: There is no â in font cmtt10!
 Missing character: There is no € in font cmtt10!
 Missing character: There is no ˜ in font cmtt10!
@@ -402,32 +1060,28 @@ Missing character: There is no ˜ in font cmtt10!
 Missing character: There is no â in font cmtt10!
 Missing character: There is no € in font cmtt10!
 Missing character: There is no ™ in font cmtt10!
- [15] (hw07.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+ [31] (hw07.aux) ) 
 Here is how much of TeX's memory you used:
- 3562 strings out of 493622
- 49536 string characters out of 3135547
- 114491 words of memory out of 3000000
- 6922 multiletter control sequences out of 15000+200000
+ 3581 strings out of 493622
+ 49751 string characters out of 3135547
+ 117491 words of memory out of 3000000
+ 6938 multiletter control sequences out of 15000+200000
  14941 words of font info for 55 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  36i,9n,39p,534b,555s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/BDVR/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmbx10.pfb><C:/Users/BDVR/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmbx12.pfb><C:/Users/BDVR/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/BDVR/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/BDVR/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/BDVR/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users
-/BDVR/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.p
-fb><C:/Users/BDVR/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmtt10.pfb>
-Output written on hw07.pdf (15 pages, 162297 bytes).
+<C:/Users/BDVR/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmbx10.pfb><C:/Users/BDVR/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/BDVR/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/BDVR/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/BDVR/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/U
+sers/BDVR/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb><C:/Users/BDVR/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmti10.pfb><C:/Users/BDVR/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmtt10.pfb>
+Output written on hw07.pdf (31 pages, 202408 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
+ 210 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
