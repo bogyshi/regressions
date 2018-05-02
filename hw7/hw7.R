@@ -84,10 +84,12 @@ predict(cmonnow,testhcf,ncomp=2,interval="prediction")
 splsmod <- plsr(hipcenter ~ ., data=seatpos, validation="CV")
 coefplot(splsmod, ncomp=4, xlab="Frequency")
 plsCV <- RMSEP(splsmod, estimate="CV")
+pdf("112numc.pdf")
+par(mfrow=c(1,1)) # init 1 chart in 1 panel
 plot(plsCV,main="")
-savePlot("11_2numc.pdf",plsCV)
+dev.off()
 #3 components looks good
-hcpred = predict(splsmod,testhcf,ncomp=3)
+hcpred = predict(splsmod,testhcf,ncomp=4)
 print(hcpred)
 "> print(hcpred)
 , , 3 comps
@@ -126,17 +128,21 @@ rmse(wut2,testfat$siri)
 
 #c
 
-temp = prcomp(fat[,-c(1,3)])
+temp = prcomp(fat2[,-c(1,3)])
 print(summary(temp))
-fatpcr = pcr(siri ~ . -brozek -density,data=fat2,ncomp=3)
+fatpcr = pcr(siri ~ . -brozek -density,data=fat2,ncomp=15)
 pcrr= predict(fatpcr,testfat,ncomp=3,interval="prediction")
 rmse(pcrr,testfat$siri)
 
 #d
+par(mfrow=c(1,2)) # init 1 chart in 1 panel
 fatpls<- plsr(siri ~ . -brozek -density,data=fat2, validation="CV")
+par(mfrow=c(1,1)) # init 1 chart in 1 panel
+pdf("114dc.pdf")
 coefplot(fatpls, ncomp=5, xlab="Frequency")
 plsCV <- RMSEP(fatpls, estimate="CV")
 plot(plsCV,main="")
+dev.off()
 savePlot("11_4dnumc.pdf",plsCV)
 hcpred = predict(fatpls,testfat,ncomp=4)
 rmse(hcpred,testfat$siri)
@@ -145,9 +151,9 @@ print(hcpred)
 fatrm = lm.ridge(siri ~ .-brozek -density,data=fat2,lambda=seq(0,2,len=30))
 fatrm2 = lm.ridge(siri ~ . +0 -brozek -density,data=fat2,lambda=seq(0,2,len=30))
 hcrgmod = lm.ridge(hipcenter~.+0,seatpos,lambda=seq(0,.2,len=8))
-pdf("hcrgp.pdf")
+pdf("fatrgp.pdf")
 matplot(fatrm2$lambda,coef(fatrm2),xlab=expression(lambda),ylab=expression(hat(beta)),type="l",col=1)
-which.min(fatrm$GCV)
+which.min(fatrm2$GCV)
 dev.off()
 
 rmtestfat=testfat[,-c(1,2,3)]
@@ -172,7 +178,7 @@ print(summary(temp2))
 #c components, 95% covered in first 9 PCS, obvi more distributed.
 print(temp2$rotation[,1])
 print(temp2$rotation[,2])
-#c the first principal component is much mroe balanced, the large values of the lengs of various parts are no longer dominating since they have been scaled
+ #c the first principal component is much mroe balanced, the large values of the lengs of various parts are no longer dominating since they have been scaled
 #d the second PC shows a strong corrolation with species, crest width, nasal length, and foramina length.
 #d the first one represented that a lot of these kangaroos are a lot more similar, while the second PC, orthogonal to the first, shows that theuy differ in the corresponding high valeud components
 
@@ -189,7 +195,9 @@ abline(0,1)
 ") Make a scatterplot of the first and second principal components using a different
 plotting symbol depending on the sex of the specimen. Do you think these
 two components would be effective in determining the sex of a skull?"
-
+pdf("idk.pdf")
+plot(x=temp$rotation[,1],y=temp$rotation[,2],xlab="PC1",ylab="PC2")
+dev.off()
 #13.2
 gala
 require(alr3)
@@ -245,12 +253,11 @@ for(i in 1:mimgp$m)
   sesgp <- rbind(sesgp ,coef(summary(lmod))[,2])
 }
 (cr <- mi.meld(q=betasgp,se=sesgp))
-summary(gmimlm)
 cr$q.mi/cr$se.mi
 #Elevation and Anear are significant, improved t values over the original single imputation
 
 
-#13.2
+#13.3
 gala
 require(alr3)
 pimamiss = pima
@@ -345,6 +352,46 @@ plot(divusalm)
 dev.off()
 #there is a cylcical nature to the erros
 #b
+
+glusalm = gls(divorce~unemployed+femlab+marriage+birth+military,divusa,correlation = corAR1(form=~year),method = "ML")
+summary(glusalm)
+intervals(glusalm,which="var-cov")
+#clearly phi is signifigant and and we see a positive correlation between consecitive years
+#also unemployed becomes signifigant as well
+#c these are divorce rates, we see these during times of war mainly, so right before and right after especially
+# people are getting married on a whim thinking they may die, when they come back they realize that they werent meant to be
+# thus they divorce at similar times as well
+
+#8.6
+c2 = cheddar
+clm = lm(taste~.,cheddar)
+summary(clm)
+c2$time=c(1:30)
+cres = residuals(clm)
+pdf("ovtc.pdf")
+plot(cres,ylab="residuals",xlab="time")
+dev.off()
+#a) there appears to be some negative trend over "time", but ti isnt that strong, but still present
+
+#b
+cgls = gls(taste~.-time,c2,correlation = corAR1(form=~time))
+summary(cgls)
+intervals(cgls,which="var-cov")
+#by this interval, we can tell that there is not much of a correlation here
+
+#c
+clm2 = lm(taste~.,c2)
+summary(clm2)
+#hilarious! time is signifigant !
+
+#d, in the GLS, we are looking at how correlated the error or noise is over "time", or consecutive entries
+# unlike our ordinary LS, the time value is being included to see how it may provide information on our response
+#the difference lies within the relations. In OLS it changes the signifigance and value based on a linear combination within each entry
+# in residuals, we are only considering the impact of the time variable after the coefficients have been established
+
+#e if i was told that the entries were not in chronological order, then this would make it purely coincidental that 
+# consecutive entries are related, and we should randomize their order to avoid the seemingly correlated entries
+
 
 summary(gmlm)
 fatpcr = pcr(siri ~ . -brozek -density,data=fat2,ncomp=3)
